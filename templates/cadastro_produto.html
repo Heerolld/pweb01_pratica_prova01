@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro de produtos</title>
+</head>
+<body>
+    <h1>Cadastro de produto</h1>
+    
+    <form method="POST" action="/cadastro_produto">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" required>
+        <br>
+        <label for="marca">marca:</label>
+        <input type="text" name="marca" id="marca" required>
+        <br>
+        <label for="preco">preco:</label>
+        <input type="number" name="preco" id="preco" required>
+        <br>
+        <button type="submit">Cadastrar</button>
+    </form>
+    <br>
+    <a href="/index">Página Inicial</a>
+    
+</body>
+</html>

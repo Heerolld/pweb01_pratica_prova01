@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Editar Produto</title>
+</head>
+<body>
+    <h1>Editar produto</h1>
+    <a href="/index">Página Inicial</a>
+    <br>
+    <form method="POST" action="/editar_produto/{{ id }}">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" value="{{ produto['nome'] }}" required>
+        <br>
+        <label for="raca">Marca:</label>
+        <input type="text" name="marca" id="marca" value="{{ produto['marca'] }}" required>
+        <br>
+        <label for="preco">Preco:</label>
+        <input type="number" name="preco" id="preco" value="{{ produto['preco'] }}" required>
+        <br>
+        <button type="submit">Salvar</button>
+    </form>
+</body>
+</html>

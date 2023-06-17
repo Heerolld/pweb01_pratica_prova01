@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listar Produtos</title>
+</head>
+<body>
+    <h1>Lista de produtos</h1>
+    <br>
+    <ul>
+        {% for produto in produtos %}
+        <li>
+            <a href="/ver_produto?id={{ loop.index0 }}">{{ loop.index0 }} - {{ produto['nome'] }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/index">Página Inicial</a>
+</body>
+</html>
